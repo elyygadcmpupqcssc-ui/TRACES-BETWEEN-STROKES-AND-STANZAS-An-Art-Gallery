@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traces Between Strokes and Stanzas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main id="home" class="page active">
+        <nav>
+            <a href="#" onclick="showPage('home')">Home</a>
+            <a href="#" onclick="showPage('artists')">The Artists</a>
+        </nav>
+
+        <section class="hero">
+            <h1>TRACES BETWEEN</h1>
+            <h2>Strokes and Stanzas</h2>
+            <p>An Online Art Gallery</p>
+            <span>A Collection of Masterpieces by Two Individuals</span>
+
+            <button onclick="showPage('collection')">
+                EXPLORE COLLECTIONS
+            </button>
+        </section>
+    </main>
+
+
+    <main id="artists" class="page">
+        <h1>BEHIND THE STROKES AND STANZAS</h1>
+
+        <div class="artists">
+            <div>
+                <img src="images/juremie.png" alt="Juremie">
+                <h2>JUREMIE R. MUGAR</h2>
+                <p>Artist</p>
+            </div>
+
+            <div>
+                <img src="images/elyza.png" alt="Elyza">
+                <h2>ELYZA LIAN E. GALINDO</h2>
+                <p>Writer</p>
+            </div>
+        </div>
+
+        <button onclick="showPage('home')">HOME</button>
+    </main>
+
+
+    <main id="collection" class="page">
+        <nav>
+            <a href="#" onclick="showPage('home')">Home</a>
+            <a href="#" onclick="showPage('artists')">The Artists</a>
+        </nav>
+
+        <h1>ART COLLECTION</h1>
+
+        <div class="gallery">
+            <div class="art-card">
+                <img src="images/collection.png" alt="Artwork">
+                <button onclick="openPoem('poem1')">READ FULL POEM</button>
+            </div>
+
+            <div class="art-card">
+                <img src="images/collection.png" alt="Artwork">
+                <button onclick="openPoem('poem2')">READ FULL POEM</button>
+            </div>
+        </div>
+
+        <button onclick="showPage('home')">HOME</button>
+    </main>
+
+
+    <div id="poem1" class="overlay">
+        <div class="poem-box">
+            <button class="close" onclick="closePoem('poem1')">×</button>
+
+            <h2>MAGULO ANG KWARTO KO</h2>
+
+            <p>
+                Magulo ang kwarto ko, na tila ba sinasalamin nito
+                ang lagay ng isip ko..
+                <br><br>
+                Ilang araw na ang nakalipas mula noong huli
+                akong nakapaglinis ng aking silid.
+                <br><br>
+                Ilang araw na mula noong nasinop ko ang
+                mga gamit.
+            </p>
+        </div>
+    </div>
+
+
+    <div id="poem2" class="overlay">
+        <div class="poem-box">
+            <button class="close" onclick="closePoem('poem2')">×</button>
+
+            <h2>SANA BUKAS, MAGAAN NA</h2>
+
+            <p>
+                Sana bukas, gumaan na ang lahat.
+                <br><br>
+                Sana bukas, mas maging payapa na ang
+                mga bagay na ngayon ay mabigat.
+            </p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
